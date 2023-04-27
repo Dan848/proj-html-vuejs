@@ -23,6 +23,7 @@
     export default {
         name: "AppHeader",
         props: {
+            isScrolled: Boolean,
             logo: String,
             links: Array
         }

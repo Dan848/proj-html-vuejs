@@ -1,5 +1,6 @@
 <template>
   <AppHeader
+  :isScrolled="scrolled"
   :logo="store.logoImg.primary"
   :links="store.headerLinks"
   />

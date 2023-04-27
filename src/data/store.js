@@ -61,7 +61,7 @@ export const store = reactive({
         subTitle: "Imagine, Create, Experience",
         title: 'With Ninja-Like Precision',
         paragraph: "We are a character-driven animation studio striving to make high-quality animations.",
-        img: "./imgs/middle.png",
+        img: "middle",
         buttons: {
             primary: "Start a Project",
             secondary: "Portfolio",
@@ -75,17 +75,17 @@ export const store = reactive({
             {
                 title: "3D modeling",
                 paragraph: "We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep, we'll drill deep to deliver above and beyond your expectations.",
-                img: "./imgs/smart1.png"
+                img: "smart1"
             },
             {
                 title: "Collaboration",
                 paragraph: "We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep, we'll drill deep to deliver above and beyond your expectations.",
-                img: "./imgs/smart2.png"
+                img: "smart2"
             },
             {
                 title: "Creativity",
                 paragraph: "We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep, we'll drill deep to deliver above and beyond your expectations.",
-                img: "./imgs/smart3.png"
+                img: "smart3"
             }
         ]
     },
@@ -95,10 +95,10 @@ export const store = reactive({
         paragraph: "Here's just a small sample of some of those projects that we're quite proud of. If you're looking for something specific feel free to get in contact with us.",
         button: "See our Work",
         cards: [
-            "./imgs/work1.png",
-            "./imgs/work2.png",
-            "./imgs/work3.png",
-            "./imgs/work4.png"
+            "work1",
+            "work2",
+            "work3",
+            "work4"
         ]
     },
     processSection: {
@@ -109,22 +109,22 @@ export const store = reactive({
             {
                 title: "Scripting",
                 paragraph: "We'll take your idea and create a technical script which consists of action notes and animation descriptions",
-                img: "./imgs/process1.png"
+                img: "process1"
             },
             {
                 title: "Pre-Production",
                 paragraph: "We'll take your idea and create a technical script which consists of action notes and animation descriptions",
-                img: "./imgs/process2.png"
+                img: "process2"
             },
             {
                 title: "Scripting",
                 paragraph: "We'll take your idea and create a technical script which consists of action notes and animation descriptions",
-                img: "./imgs/process1.png"
+                img: "process1"
             },
             {
                 title: "Pre-Production",
                 paragraph: "We'll take your idea and create a technical script which consists of action notes and animation descriptions",
-                img: "./imgs/process2.png"
+                img: "process2"
             },
         ]
     },
@@ -136,17 +136,17 @@ export const store = reactive({
             {
                 name: "Robert Coleman",
                 role: "Owner & Creative Director",
-                img: "./imgs/team1.png"
+                img: "team1"
             },
             {
                 name: "Don Woods",
                 role: "Administrator",
-                img: "./imgs/team2.png"
+                img: "team2"
             },
             {
                 name: "Tomas Nash",
                 role: "2D Animator % Compositor",
-                img: "./imgs/team3.png"
+                img: "team3"
             },
         ]
     },
@@ -156,27 +156,27 @@ export const store = reactive({
         paragraph: "We are trusted throughout adland and have a wealth of recommendations from start-ups to renowned global brands.",
         cards: [
             {
-                src: "./imgs/sponsor1.png",
+                src: "sponsor1",
                 alt: "Supreme"
             },
             {
-                src: "./imgs/sponsor2.png",
+                src: "sponsor2",
                 alt: "Phoenix"
             },
             {
-                src: "./imgs/sponsor3.png",
+                src: "sponsor3",
                 alt: "Cooperation"
             },
             {
-                src: "./imgs/sponsor4.png",
+                src: "sponsor4",
                 alt: "Business"
             },
             {
-                src: "./imgs/sponsor5.png",
+                src: "sponsor5",
                 alt: "Pillar"
             },
             {
-                src: "./imgs/sponsor6.png",
+                src: "sponsor6",
                 alt: "Digital Eagle"
             },
         ]
@@ -210,7 +210,7 @@ export const store = reactive({
         ]
     },
     logoImg: {
-        primary: "./imgs/logo.png",
-        footer: "./imgs/footer-logo.png"
+        primary: "logo",
+        footer: "footer-logo"
     }
 })

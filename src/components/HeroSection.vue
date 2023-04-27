@@ -42,7 +42,7 @@
                         <a class="cta-btn-two ms-2" href="#">{{ obj.buttons.secondary }}</a>
                     </div>
                     <div class="jumbotron">
-                        <img class="img-fluid" :src="obj.img" alt="Should be a video">
+                        <img class="img-fluid" :src="'./imgs/' + obj.img + '.png'" :alt="obj.img">
                     </div>
                 </div>
             </div>
