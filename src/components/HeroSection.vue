@@ -26,10 +26,13 @@
         <div class="hero-bg light">
             <img src="/imgs/light.png" alt="light">
         </div>
+        <div class="hero-bg shape-bot">
+            <img src="/imgs/bottom-shape.png" alt="shape-bottom">
+        </div>
         <!-- Hero Container -->
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xxl-12 text-center">
+                <div class="col text-center">
                     <h5 class="mb-3">{{ obj.subTitle }}</h5>
                     <h1>We Animate</h1>
                     <h1 class="mb-2">{{ obj.title }}</h1>
@@ -39,7 +42,7 @@
                         <a class="cta-btn-two ms-2" href="#">{{ obj.buttons.secondary }}</a>
                     </div>
                     <div class="jumbotron">
-                        <img class="img-fluid" :src="obj.img" alt="">
+                        <img class="img-fluid" :src="obj.img" alt="Should be a video">
                     </div>
                 </div>
             </div>
@@ -56,7 +59,6 @@
     },
 
     data() {
-
     }, 
   }
 </script>
@@ -83,6 +85,7 @@
         }
         .hero-bg {
             position: absolute;
+            overflow: hidden;
             &.left-man {
                 z-index: 60;
                 top: 25%;
@@ -129,6 +132,12 @@
                 top: 10%;
                 right: 5%;
                 max-width: 110px;
+            }
+            &.shape-bot {
+                z-index: 70;
+                bottom: 0;
+                left: 0;
+                width: 100%;
             }
             img{
                 width: 100%;
