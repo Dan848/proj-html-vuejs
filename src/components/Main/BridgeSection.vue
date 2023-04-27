@@ -33,7 +33,7 @@
 </template>
 
 <script>
-  import { store } from "../data/store";
+  import { store } from "../../data/store";
   import BaseSection from "./BaseSection.vue";
   import BridgeCard from "./BridgeCard.vue";
   export default {
@@ -51,7 +51,7 @@
 </script>
 
 <style lang="scss" scoped>
-@use "../assets/styles/partials/variables" as *;
+@use "../../assets/styles/partials/variables" as *;
     .bridge-section {
         background: url("./imgs/counter-bg.png");
         padding: 1px 0 1px 0;

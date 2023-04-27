@@ -22,23 +22,10 @@ a{
     text-decoration: none;
 }
 
-.cta-btn {
-    background-color: $dc-secondary-one!important;
-    font-weight: 600!important;
+.btn-template {
     padding: 0.75rem 2rem;
     border-radius: 50rem;
-    color: $dc-primary-one!important;
-    word-break: keep-all!important;
-    white-space: nowrap!important;
-}
-
-.cta-btn-two {
-    background-color: transparent;
     font-weight: 600!important;
-    padding: 0.75rem 2rem;
-    border-radius: 50rem;
-    border: 1px solid white;
-    color: $dc-white!important;
     word-break: keep-all!important;
     white-space: nowrap!important;
 }

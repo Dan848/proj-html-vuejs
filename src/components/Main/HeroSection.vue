@@ -38,8 +38,8 @@
                     <h1 class="mb-2">{{ obj.title }}</h1>
                     <p>{{ obj.paragraph }}</p>
                     <div class="d-flex justify-content-center align-items-center mb-5">
-                        <a class="cta-btn fw me-2" href="#">{{ obj.buttons.primary }}</a>
-                        <a class="cta-btn-two ms-2" href="#">{{ obj.buttons.secondary }}</a>
+                        <a class="hero-btn btn-template fw me-2" href="#">{{ obj.buttons.primary }}</a>
+                        <a class="hero-btn-two btn-template ms-2" href="#">{{ obj.buttons.secondary }}</a>
                     </div>
                     <div class="jumbotron">
                         <img class="img-fluid" :src="'./imgs/' + obj.img + '.png'" :alt="obj.img">
@@ -64,7 +64,7 @@
 </script>
 
 <style lang="scss" scoped>
-@use "../assets/styles/partials/variables" as *;
+@use "../../assets/styles/partials/variables" as *;
     .hero {
 
         padding-top: 150px;
@@ -164,6 +164,16 @@
             .jumbotron {
                 transform: translateY(170px);
                 margin-top: -170px;
+            }
+            .hero-btn {
+            background-color: $dc-secondary-one!important;
+            color: $dc-primary-one!important;
+            }
+
+            .hero-btn-two {
+                background-color: transparent;
+                border: 1px solid white;
+                color: $dc-white!important;
             }
         }
     }

@@ -20,7 +20,7 @@
 </script>
 
 <style lang="scss" scoped>
-@use "../assets/styles/partials/variables" as *;
+@use "../../assets/styles/partials/variables" as *;
     .bridge-card {
         display: flex;
         justify-content: center;

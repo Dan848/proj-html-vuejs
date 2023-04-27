@@ -37,7 +37,7 @@
 </template>
 
 <script>
-  import { store } from "../data/store";
+  import { store } from "../../data/store";
   import BaseSection from "./BaseSection.vue";
   import AboutCard from "./AboutCard.vue";
   export default {
@@ -55,7 +55,7 @@
 </script>
 
 <style lang="scss" scoped>
-@use "../assets/styles/partials/variables" as *;
+@use "../../assets/styles/partials/variables" as *;
 
     .about-section {
         padding-top: 220px;

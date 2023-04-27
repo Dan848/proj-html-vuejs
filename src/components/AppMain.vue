@@ -2,19 +2,22 @@
     <HeroSection :obj="store.heroSection" />
     <AboutSection />
     <BridgeSection />
+    <PortfolioSection />
 </template>
 
 <script>
   import { store } from "../data/store";
-  import HeroSection from './HeroSection.vue';
-  import AboutSection from "./AboutSection.vue";
-  import BridgeSection from "./BridgeSection.vue";
+  import HeroSection from './Main/HeroSection.vue';
+  import AboutSection from "./Main/AboutSection.vue";
+  import BridgeSection from "./Main/BridgeSection.vue";
+  import PortfolioSection from "./Main/PortfolioSection.vue";
   export default {
     name: "AppMain",
     components: {
         HeroSection,
         AboutSection,
-        BridgeSection
+        BridgeSection,
+        PortfolioSection
     },
 
     data() {
