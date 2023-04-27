@@ -5,7 +5,7 @@
             <div class="d-flex justify-content-between align-items-center py-3">
                 <!-- Logo -->
                 <div>
-                    <img :src="logo" alt="Logo">
+                    <img :src="'./imgs/' + logo + '.png'" alt="Logo">
                 </div>
                 <!-- Nav Links -->
                 <ul class="list-unstyled d-flex gap-3 text-capitalize mb-0">

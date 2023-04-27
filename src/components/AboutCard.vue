@@ -36,6 +36,7 @@
         }
         .about-card{
             border: 1px solid $dc-misc-two;
+            height: 100%;
         }
         .card-one {
             background-image: linear-gradient(to top, $dc-card-one, #FFFFFF);

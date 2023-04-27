@@ -10,11 +10,12 @@
                 :sub-title="store.aboutSection.subTitle"
                 :title="store.aboutSection.title"
                 :paragraph="store.aboutSection.paragraph"
+                :theme-color="true"
                 />
                 </div>
             </div>
             <!-- Cards -->
-            <div class="row justify-content-center to-right">
+            <div class="row justify-content-center align-items-stretch to-right">
                 <AboutCard
                 v-for="(card, index) in store.aboutSection.cards" :key="index"
                 :indx="index"
