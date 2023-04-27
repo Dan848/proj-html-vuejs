@@ -3,6 +3,7 @@
   :logo="store.logoImg.primary"
   :links="store.headerLinks"
   />
+  <AppMain />
 </template>
 
 
@@ -10,10 +11,12 @@
 <script>
   import { store } from "./data/store";
   import AppHeader from "./components/AppHeader.vue";
+  import AppMain from "./components/AppMain.vue";
   export default {
     name: "App",
     components: {
-      AppHeader
+      AppHeader,
+      AppMain
     },
 
     data() {

@@ -59,9 +59,9 @@ export const store = reactive({
     ],
     heroSection:{
         subTitle: "Imagine, Create, Experience",
-        title: "We Animate\nWith Ninja-Like Precision",
+        title: 'With Ninja-Like Precision',
         paragraph: "We are a character-driven animation studio striving to make high-quality animations.",
-        img: "./imgs/middle",
+        img: "./imgs/middle.png",
         buttons: {
             primary: "Start a Project",
             secondary: "Portfolio",

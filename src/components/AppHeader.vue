@@ -1,21 +1,22 @@
 <template>
+    <!-- HEADER -->
     <header :class="{'make-absolute' : true, 'make-fixed' : isScrolled}">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center py-3">
-                <!-- LOGO -->
+                <!-- Logo -->
                 <div>
                     <img :src="logo" alt="Logo">
                 </div>
-                <!-- LINK NAV -->
+                <!-- Nav Links -->
                 <ul class="list-unstyled d-flex gap-3 text-capitalize mb-0">
                     <li v-for="(link, index) in links" :key="index">
                         <a :href="link.href" :class="{ 'cta-btn': index === links.length - 1 }"> {{ link.text }} </a>
                     </li>
                 </ul>
-
             </div>
         </div>
     </header>
+    <!-- /HEADER -->
 </template>
 
 <script>
@@ -35,7 +36,7 @@
         left: 0px;
         right: 0px;
         position: absolute;
-        background: $dc-primary-one;
+        background: transparent;
         transition: background-color 0.5s ease, position 0.5s ease;
         z-index: 888;
     }
@@ -49,15 +50,7 @@
     }
 
     a {
-        text-decoration: none;
         color: $dc-white;
         font-weight: 600;
-    }
-
-    .cta-btn {
-        background-color: $dc-secondary-one;
-        padding: 0.75rem 2rem;
-        border-radius: 50rem;
-        color: $dc-primary-one;
     }
 </style>

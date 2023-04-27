@@ -1,19 +1,19 @@
 <template>
-    <div>
-
-    </div>
+    <HeroSection :obj="store.heroSection" />
 </template>
 
 <script>
+import { store } from "../data/store"
+  import HeroSection from './HeroSection.vue';
   export default {
-    name: "App",
-    components: {     
+    name: "AppMain",
+    components: {
+        HeroSection
     },
 
     data() {
       return {
         store,
-        scrolled: false
       }
     }, 
   }
