@@ -1,12 +1,24 @@
 <template>
   <div>
-    Scaffolding
+    Data Created
   </div>
 </template>
 
+
+
 <script>
+  import { store } from "./data/store";
   export default {
-    
+    name: "App",
+    components: {     
+    },
+
+    data() {
+      return {
+        store,
+        scrolled: false
+      }
+    }, 
   }
 </script>
 

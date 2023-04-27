@@ -8,3 +8,12 @@ $fa-font-path: "./webfonts";
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Chakra+Petch:wght@400;500;600;700&display=swap');
 //Bootstrap
 @import "bootstrap/scss/bootstrap";
+
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Chakra Petch', sans-serif;
+}
