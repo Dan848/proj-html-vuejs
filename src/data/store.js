@@ -187,9 +187,9 @@ export const store = reactive({
         paragraph: "Join our newsletter for tips on how to elevate your brand through storytelling"
     },
     bridgeSection: {
-        subTitle: none,
+        subTitle: null,
         title: "Anidio Quick Facts",
-        paragraph: none,
+        paragraph: null,
         cards: [
             {
                 text: "Projects Done",
@@ -201,11 +201,11 @@ export const store = reactive({
             },
             {
                 text: "Team Members",
-                item:   "700+",
+                item:   "25+",
             },
             {
                 text: "Years on the market",
-                item:   "700+",
+                item:   "12+",
             }
         ]
     },
