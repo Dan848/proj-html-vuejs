@@ -1,5 +1,8 @@
 <template>
-  <AppHeader />
+  <AppHeader
+  :logo="store.logoImg.primary"
+  :links="store.headerLinks"
+  />
 </template>
 
 
