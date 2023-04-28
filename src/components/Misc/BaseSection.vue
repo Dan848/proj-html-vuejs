@@ -2,7 +2,7 @@
     <div>
         <h5 v-if="subTitle" :class="themeColor ? 'color-primary-two' : 'color-secondary-two'" class="mb-3">{{subTitle}}</h5>
         <h2 v-if="title" :class="themeColor ? 'color-primary-one' : 'color-light'" class="mb-2">{{ title }}</h2>
-        <p v-if="paragraph">{{ paragraph }}</p>
+        <p v-if="paragraph" :class="themeColor ? 'color-primary-one' : 'color-light'">{{ paragraph }}</p>
     </div>
 </template>
 

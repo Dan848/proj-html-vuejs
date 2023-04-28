@@ -10,7 +10,7 @@
                 <!-- Nav Links -->
                 <ul class="list-unstyled d-flex gap-3 text-capitalize mb-0">
                     <li v-for="(link, index) in links" :key="index">
-                        <a :href="link.href" :class="{ 'cta-btn': index === links.length - 1 }"> {{ link.text }} </a>
+                        <a :href="link.href" :class="{ 'cta-btn btn-template': index === links.length - 1 }"> {{ link.text }} </a>
                     </li>
                 </ul>
             </div>
