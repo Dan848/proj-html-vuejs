@@ -1,6 +1,6 @@
 <template>
     <div class="col-sm-6 col-12 mb-3 mb-md-0">
-        <div class="rounded-5 px-3 py-4 about-card">
+        <div class="rounded-5 px-3 py-4 process-card">
             <div class="num-card">
                 {{ indx + 1 }}
             </div>
@@ -10,7 +10,7 @@
             <h4 class="mt-3">
                 {{ title }}
             </h4>
-            <div class="para">
+            <div>
                 {{ paragraph }}
             </div>
         </div>
@@ -35,7 +35,7 @@
 <style lang="scss" scoped>
 @use "../../assets/styles/partials/variables" as *;
 
-        .about-card{
+        .process-card{
             border: 1px solid $dc-misc-two;
             height: 100%;
             background-color: $dc-white;
@@ -45,6 +45,7 @@
             flex-direction: column;
             text-align: center;
             position: relative;
+            color: $dc-primary-one;
 
             .num-card {
                 position: absolute;

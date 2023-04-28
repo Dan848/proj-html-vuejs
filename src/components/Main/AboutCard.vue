@@ -5,7 +5,7 @@
             <h4 class="mt-3">
                 {{ title }}
             </h4>
-            <div class="para">
+            <div>
                 {{ paragraph }}
             </div>
         </div>

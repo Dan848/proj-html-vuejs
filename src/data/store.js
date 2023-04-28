@@ -145,8 +145,28 @@ export const store = reactive({
             },
             {
                 name: "Tomas Nash",
-                role: "2D Animator % Compositor",
+                role: "2D Animator & Compositor",
                 img: "team3"
+            },
+            {
+                name: "Adam Taylor",
+                role: "Web Developer",
+                img: "team1"
+            },
+            {
+                name: "David Parker",
+                role: "Software Engineer",
+                img: "team2"
+            },
+            {
+                name: "James Foster",
+                role: "Data Analyst",
+                img: "team3"
+            },
+            {
+                name: "Daniel Waxfly",
+                role: "I think its important",
+                img: "team1"
             },
         ]
     },
@@ -212,5 +232,5 @@ export const store = reactive({
     logoImg: {
         primary: "logo",
         footer: "footer-logo"
-    }
+    },
 })

@@ -21,7 +21,7 @@
                     <div class="row mb-3">
                         <ProcessCard
                         v-for="(card, index) in store.processSection.cards" :key="index"
-                        :class="{ 'card-active': isActive(index), 'd-none' : !isActive(index) }"
+                        :class="{ 'd-block': isActive(index), 'd-none' : !isActive(index)}"
                         :indx="index"
                         :img="card.img"
                         :title="card.title"
@@ -31,7 +31,7 @@
                     <!-- Button Carosel -->
                     <div class="d-flex justify-content-center justify-content-lg-start">
                         <!-- Prev -->
-                        <button class="circle-ico me-1 fs-5">
+                        <button @click="prevActive(store.processSection.cards)" class="circle-ico me-1 fs-5">
                             <i class="fa-solid fa-arrow-left"></i>
                         </button>
                         <!-- Next -->                        
@@ -55,7 +55,7 @@
 
 <script>
   import { store } from "../../data/store";
-  import BaseSection from "./BaseSection.vue";
+  import BaseSection from "../Misc/BaseSection.vue";
   import ProcessCard from "./ProcessCard.vue";
   export default {
     name: "ProcessSection",
@@ -78,6 +78,13 @@
             this.activeIndex++
             } else {
                 this.activeIndex = 0
+            }
+        },
+        prevActive(arr) {
+            if (this.activeIndex === 0) {
+            this.activeIndex = arr.length -2
+            } else {
+            this.activeIndex--
             }
         }
     }
@@ -112,9 +119,6 @@
         .container{
             position: relative;
             z-index: 100;
-            .card-active {
-                display: block
-            }
             .circle-ico {
                 color: $dc-misc-two;
             }

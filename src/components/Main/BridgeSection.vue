@@ -36,7 +36,7 @@
 
 <script>
   import { store } from "../../data/store";
-  import BaseSection from "./BaseSection.vue";
+  import BaseSection from "../Misc/BaseSection.vue";
   import BridgeCard from "./BridgeCard.vue";
   export default {
     name: "BridgeSection",

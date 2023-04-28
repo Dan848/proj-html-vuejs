@@ -4,6 +4,7 @@
     <BridgeSection />
     <PortfolioSection />
     <ProcessSection />
+    <TeamSection />
 </template>
 
 <script>
@@ -13,6 +14,7 @@
   import BridgeSection from "./Main/BridgeSection.vue";
   import PortfolioSection from "./Main/PortfolioSection.vue";
   import ProcessSection from "./Main/ProcessSection.vue";
+  import TeamSection from "./Main/TeamSection.vue";
   export default {
     name: "AppMain",
     components: {
@@ -20,7 +22,8 @@
         AboutSection,
         BridgeSection,
         PortfolioSection,
-        ProcessSection
+        ProcessSection,
+        TeamSection
     },
 
     data() {
