@@ -73,14 +73,14 @@
             z-index: 10;
         }
         .shape-bot {
-            bottom: 0;
+            bottom: -1px;
             left: 0;
             right: 0;
             z-index: 20;
             height: 36px;
         }
         .shape-top {
-            top: 0px;
+            top: -1px;
             left: 0;
             right: 0;
             z-index: 20;

@@ -140,6 +140,8 @@
                 top: 10%;
                 right: 5%;
                 max-width: 110px;
+                animation: swing 4s linear infinite;
+
             }
             &.shape-bot {
                 z-index: 70;
@@ -200,10 +202,18 @@
 
     @media screen and (max-width: 1400px) {
         .left-man {
-        max-width: 200px!important;
+            max-width: 200px!important;
         }
         .right-man {
-        max-width: 200px!important;
+            max-width: 200px!important;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .left-man {
+            display: none;
+        }
+        .right-man {
+            display: none;
         }
     }
 </style>
