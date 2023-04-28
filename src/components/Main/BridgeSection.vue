@@ -72,6 +72,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 10;
+            animation: rotateCenter 30s linear infinite reverse;
         }
         .shape-bot {
             bottom: -1px;

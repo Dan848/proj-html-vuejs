@@ -68,6 +68,25 @@ a{
     }
 }
 
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateCenter {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg)
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg)
+    }
+}
+
+
 @keyframes moveUpDown {
     0%, 100% {
         transform: translateY(0);
