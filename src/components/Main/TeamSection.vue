@@ -21,8 +21,9 @@
                     />
                 </div>
             </div>
-            <div class="row mt-5 pt-5 mb-4 g-4">
+            <div class="row align-items-stretch mt-5 pt-5 mb-4 g-4">
                 <TeamCard 
+                class="mb-5"
                 v-for:="(card, index) in store.teamSection.cards"
                 :class="{ 'd-block': isActive(index), 'd-none' : !isActive(index)}"
                 :key="index"

@@ -124,4 +124,9 @@
             }
         }
     }
+    @media screen and (max-width: 576px) {
+        .process-thumb {
+            display: none;
+        }
+    }
 </style>
