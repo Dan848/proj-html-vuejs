@@ -1,31 +1,30 @@
 <template>
     <!-- HEADER -->
     <header :class="{'make-absolute' : true, 'make-fixed' : isScrolled}">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center py-3">
-                <!-- Logo -->
-                <div>
-                    <img :src="'./imgs/' + logo + '.png'" alt="Logo">
-                </div>
-                <!-- Nav Links -->
-                <ul class="list-unstyled d-flex gap-3 text-capitalize mb-0">
-                    <li v-for="(link, index) in links" :key="index">
-                        <a :href="link.href" :class="{ 'cta-btn btn-template': index === links.length - 1 }"> {{ link.text }} </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <NavLogo 
+        :isHeader="true"
+        :logo="store.logoImg.primary"
+        :links="store.headerLinks"
+        />
     </header>
     <!-- /HEADER -->
 </template>
 
 <script>
+    import { store } from "../data/store";
+    import NavLogo from './Misc/NavLogo.vue';
     export default {
         name: "AppHeader",
+        components: {
+            NavLogo
+        },
         props: {
-            isScrolled: Boolean,
-            logo: String,
-            links: Array
+            isScrolled: Boolean
+        },
+        data(){
+            return {
+                store
+            }
         }
     }
 </script>
