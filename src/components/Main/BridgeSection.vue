@@ -67,9 +67,10 @@
             }
         }
         .globe {
-            top: 0;
-            bottom: 0;
-            right: 30%;
+            max-width: 458px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             z-index: 10;
         }
         .shape-bot {
