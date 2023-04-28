@@ -4,7 +4,8 @@
         <div class="container mb-5">
             <div class="row justify-content-center mb-4">
                 <div class="col-12 col-lg-8 col-xxl-6">
-                    <BaseSection 
+                    <BaseSection
+                    class="text-center"
                     :sub-title="store.portfolioSection.subTitle"
                     :title="store.portfolioSection.title"
                     :paragraph="store.portfolioSection.paragraph"
@@ -28,7 +29,7 @@
   import { store } from "../../data/store";
   import BaseSection from "./BaseSection.vue";
   export default {
-    name: "BridgeSection",
+    name: "PortfolioSection",
     components: {
         BaseSection
     },

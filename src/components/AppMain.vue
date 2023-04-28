@@ -3,6 +3,7 @@
     <AboutSection />
     <BridgeSection />
     <PortfolioSection />
+    <ProcessSection />
 </template>
 
 <script>
@@ -11,13 +12,15 @@
   import AboutSection from "./Main/AboutSection.vue";
   import BridgeSection from "./Main/BridgeSection.vue";
   import PortfolioSection from "./Main/PortfolioSection.vue";
+  import ProcessSection from "./Main/ProcessSection.vue";
   export default {
     name: "AppMain",
     components: {
         HeroSection,
         AboutSection,
         BridgeSection,
-        PortfolioSection
+        PortfolioSection,
+        ProcessSection
     },
 
     data() {

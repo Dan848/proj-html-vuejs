@@ -7,6 +7,7 @@
             <div class="row justify-content-center mb-4">
                 <div class="col-lg-7 col">
                 <BaseSection 
+                class="text-center"
                 :sub-title="store.aboutSection.subTitle"
                 :title="store.aboutSection.title"
                 :paragraph="store.aboutSection.paragraph"

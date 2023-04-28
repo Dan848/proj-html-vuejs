@@ -15,7 +15,9 @@
         <div class="container">
             <div class="row">
                 <div class="col my-4">
-                    <BaseSection                    :title="store.bridgeSection.title"
+                    <BaseSection
+                    class="text-center"
+                    :title="store.bridgeSection.title"
                     :theme-color="false"
                     />
                 </div>
