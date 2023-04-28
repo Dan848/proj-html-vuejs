@@ -34,8 +34,8 @@
             <div class="row justify-content-center">
                 <div class="col text-center">
                     <h5 class="mb-3">{{ obj.subTitle }}</h5>
-                    <h1>We Animate</h1>
-                    <h1 class="mb-2">{{ obj.title }}</h1>
+                    <h1>{{ obj.title.lineOne }}</h1>
+                    <h1 class="mb-2">{{ obj.title.lineTwo }}</h1>
                     <p>{{ obj.paragraph }}</p>
                     <div class="d-flex justify-content-center align-items-center mb-5">
                         <a class="cta-btn btn-template fw me-2" href="#">{{ obj.buttons.primary }}</a>
@@ -43,6 +43,9 @@
                     </div>
                     <div class="jumbotron">
                         <img class="img-fluid" :src="'./imgs/' + obj.img + '.png'" :alt="obj.img">
+                        <div class="play-button">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -164,6 +167,22 @@
             .jumbotron {
                 transform: translateY(170px);
                 margin-top: -170px;
+                position: relative;
+                .play-button{
+                    position: absolute;
+                    width: 60px;
+                    height: 60px;
+                    background-color: #a615ea;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1rem;
+                    color: $dc-white;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateY(-30px) translateX(-30px)
+                }
             }
 
             .cta-btn-two {

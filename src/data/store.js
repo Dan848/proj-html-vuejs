@@ -59,7 +59,10 @@ export const store = reactive({
     ],
     heroSection:{
         subTitle: "Imagine, Create, Experience",
-        title: 'With Ninja-Like Precision',
+        title: {
+            lineOne: "We animate",
+            lineTwo: "With Ninja-Like Precision"
+            },
         paragraph: "We are a character-driven animation studio striving to make high-quality animations.",
         img: "middle",
         buttons: {
