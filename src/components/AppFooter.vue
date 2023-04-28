@@ -7,10 +7,10 @@
         :links="store.footerLinks"
         />
         <div class="container">
-            <hr>
+            <hr class="mb-4 mt-2">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <div>
-                    Copyright © 2022 Softivus. All rights reserved.
+                    Copyright © 2022 <a href="#">Softivus.</a> All rights reserved.
                 </div>
                 <SocialTris />
             </div>
@@ -43,5 +43,8 @@
 @use "../assets/styles/partials/variables" as *;
     footer {
         padding-top: 100px;
+        a {
+            font-weight: 600;
+        }
     }
 </style>

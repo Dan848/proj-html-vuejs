@@ -34,6 +34,13 @@ a{
 .cta-btn {
     background-color: $dc-secondary-one!important;
     color: $dc-primary-one!important;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+    &:hover{
+        background-color: transparent!important;
+        border: 1px solid white!important;
+        color: $dc-white!important;
+    }
     }
 
 .circle-ico {
@@ -45,4 +52,9 @@ a{
     height: 50px;
     border: 1px solid $dc-misc-two;
     background-color: $dc-white;
+    cursor: pointer;
+    &:hover{
+        background-color: $dc-secondary-two;
+        color: $dc-white!important;
+    }
 }

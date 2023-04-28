@@ -37,14 +37,24 @@
         .about-card{
             border: 1px solid $dc-misc-two;
             height: 100%;
+            cursor: pointer;
         }
         .card-one {
             background-image: linear-gradient(to top, $dc-card-one, #FFFFFF);
+            &:hover{
+                background-image: linear-gradient(to bottom, $dc-card-one, #FFFFFF);
+            }
         }
         .card-two {
             background-image: linear-gradient(to top, $dc-card-two, #FFFFFF);
+            &:hover{
+                background-image: linear-gradient(to bottom, $dc-card-two, #FFFFFF);
+            }
         }
         .card-three {
             background-image: linear-gradient(to top, $dc-card-three, #FFFFFF);
+            &:hover{
+                background-image: linear-gradient(to bottom, $dc-card-three, #FFFFFF);
+            }
         }
 </style>

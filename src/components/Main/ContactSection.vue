@@ -88,9 +88,14 @@
                 };
                 button {
                     position: absolute;
+                    z-index: 110;
                     top: 10px;
                     right: 15px;
-                    border: none;
+                    border: 2px solid transparent;
+                    &:hover {
+                        color: $dc-primary-one!important;
+                        border: 2px solid $dc-secondary-one!important;
+                    }
                 }
             }
 

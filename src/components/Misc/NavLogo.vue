@@ -36,6 +36,9 @@
 
     a {
         font-weight: 600;
+        &:hover {
+                color: $dc-secondary-two;
+            }
     }
 
     .color-light {
