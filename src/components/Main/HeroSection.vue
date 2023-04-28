@@ -94,12 +94,14 @@
                 top: 25%;
                 left: 2%;
                 max-width: 280px;
+                animation: moveUpDown 4s ease-in-out infinite;
             }
             &.right-man {
                 z-index: 60;
                 top: 25%;
                 right: 2%;
                 max-width: 280px;
+                animation: moveUpDown 5s ease-in-out infinite;
             }
             &.left-dots {
                 z-index: 10;
@@ -118,11 +120,14 @@
                 top: 10%;
                 left: 10%;
                 max-width: 110px;
+                animation: rotate 5s linear infinite reverse;
+
             }
             &.globe-2 {
                 z-index: 20;
                 right: 30%;
                 max-width: 95px;
+                animation: rotate 3s linear infinite;
             }
             &.globe-3 {
                 z-index: 30;

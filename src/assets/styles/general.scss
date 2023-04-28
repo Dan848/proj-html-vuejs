@@ -58,3 +58,21 @@ a{
         color: $dc-white!important;
     }
 }
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+      50% {
+        transform: translateY(-30px);
+    }
+}
